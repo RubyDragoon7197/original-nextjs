@@ -4,15 +4,24 @@
 
 /* 🎨 Estilos globales opcionales */
 body {
-  background: linear-gradient(to bottom, #111827, #000000); /* equivalente a from-gray-900 to-black */
+  background: linear-gradient(to bottom, #111827, #000000);
   color: white;
   font-family: sans-serif;
 }
 
 button {
-  @apply rounded-lg font-semibold transition duration-200;
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 input {
-  @apply bg-gray-100 text-black border-2 border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  background-color: #f3f4f6; /* gray-100 */
+  color: black;
+  border: 2px solid #9ca3af; /* gray-400 */
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* ring-blue-500 */
 }
