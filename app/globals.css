@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🎨 Estilos globales opcionales */
+body {
+  background: linear-gradient(to bottom, #111827, #000000); /* equivalente a from-gray-900 to-black */
+  color: white;
+  font-family: sans-serif;
+}
+
+button {
+  @apply rounded-lg font-semibold transition duration-200;
+}
+
+input {
+  @apply bg-gray-100 text-black border-2 border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
